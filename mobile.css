@@ -1,0 +1,636 @@
+/* =====================================================
+   MOBILE CSS - COMPLETE VERSION WITH ALL FIXES
+   PT Tunas Tumbur Sejahtera
+   ===================================================== */
+
+/* =====================================================
+   SCROLLBAR BEHAVIOR - iOS & Android
+   ===================================================== */
+
+/* Smooth scrolling for all devices */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Body scroll behavior */
+html, body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar on horizontal scroll elements */
+.fleet-carousel::-webkit-scrollbar,
+#portfolioGrid::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.fleet-carousel,
+#portfolioGrid {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Prevent horizontal scroll on main containers */
+.section, .container, .hero, .about, .services, .vision-mission, .fleet {
+  overflow-x: hidden !important;
+}
+
+/* Universal slider button hiding */
+.carousel-btn, .fleet-arrow {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* =====================================================
+   1. FIX ARMADA KAMI - MOBILE RESPONSIVE
+   ===================================================== */
+@media (max-width: 768px) {
+  /* Fleet Section Mobile */
+  .fleet-section {
+    padding: 60px 0 !important;
+  }
+  
+  .fleet-section .section-title {
+    font-size: 32px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  /* Fleet Carousel - Show 3 items on mobile */
+  .fleet-carousel {
+    gap: 12px !important;
+    padding: 10px 0 20px !important;
+    scroll-snap-type: x mandatory;
+  }
+  
+  /* Fleet Item - Smaller on mobile */
+  .fleet-item {
+    flex: 0 0 160px !important; /* Lebih kecil untuk mobile */
+    scroll-snap-align: start;
+  }
+  
+  .fleet-item img {
+    height: auto !important;
+    max-height: 120px !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+  }
+  
+  .fleet-info {
+    padding: 8px 0 0 !important;
+  }
+  
+  .fleet-info h4 {
+    font-size: 14px !important;
+    margin: 4px 0 0 !important;
+  }
+  
+  /* Fleet Modal Mobile */
+  .fleet-modal-content {
+    padding: 24px !important;
+    margin: 20px !important;
+    max-height: 85vh !important;
+  }
+  
+  .fleet-modal-content img {
+    max-height: 250px !important;
+  }
+  
+  .fleet-name h3 {
+    font-size: 22px !important;
+  }
+  
+  .fleet-name .capacity-text {
+    font-size: 16px !important;
+  }
+  
+  .fleet-desc {
+    font-size: 14px !important;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .fleet-item {
+    flex: 0 0 140px !important;
+  }
+  
+  .fleet-item img {
+    max-height: 100px !important;
+  }
+  
+  .fleet-info h4 {
+    font-size: 13px !important;
+  }
+}
+
+/* =====================================================
+   2. FIX LAYANAN KAMI - OPERATIONAL POINTS MOBILE
+   ===================================================== */
+@media (max-width: 768px) {
+  /* Service Section */
+  .service-overview {
+    padding: 24px !important;
+    margin-bottom: 40px !important;
+  }
+  
+  /* Operational Points - Stack vertically on mobile */
+  .operational-points {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-top: 20px !important;
+  }
+  
+  .op-point {
+    padding: 16px !important;
+    gap: 12px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+  
+  .op-icon {
+    flex-shrink: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+  }
+  
+  .op-icon svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  
+  .op-point p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+  
+  /* Service Items Mobile */
+  .service-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .service-item {
+    min-height: 350px !important;
+  }
+  
+  .service-item-content {
+    padding: 24px !important;
+  }
+  
+  .service-item h3 {
+    font-size: 22px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .service-item p,
+  .service-item ul li {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+  
+  .service-item ul li {
+    padding-left: 28px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .service-item ul li::before {
+    font-size: 16px !important;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .service-overview {
+    padding: 20px !important;
+  }
+  
+  .op-point {
+    padding: 14px !important;
+  }
+  
+  .op-icon {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+  }
+  
+  .op-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+  .op-point p {
+    font-size: 13px !important;
+  }
+}
+
+/* =====================================================
+   3. FIX HAMBURGER MENU - PORTFOLIO PAGE & ALL PAGES
+   ===================================================== */
+@media (max-width: 1200px) {
+  /* Ensure hamburger is visible */
+  .menu-toggle {
+    display: flex !important;
+    z-index: 1001 !important;
+  }
+  
+  /* Hide desktop menu */
+  .menu {
+    display: none !important;
+  }
+  
+  /* Mobile dropdown styling */
+  .nav-dropdown {
+    display: block !important;
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    right: 20px !important;
+    background: rgba(0, 61, 130, 0.98) !important;
+    backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px) !important;
+    border-radius: 16px !important;
+    padding: 12px !important;
+    min-width: 220px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+    z-index: 999 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .nav-dropdown[hidden] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(-10px) !important;
+  }
+  
+  .nav-dropdown a,
+  .nav-dropdown button {
+    display: block !important;
+    width: 100% !important;
+    padding: 14px 18px !important;
+    color: #fff !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 8px !important;
+    text-align: left !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: background 0.3s ease !important;
+    margin-bottom: 4px !important;
+  }
+  
+  .nav-dropdown a:hover,
+  .nav-dropdown button:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+  }
+  
+  /* Hamburger animation */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile header adjustments */
+  .header {
+    padding: 12px 0 !important;
+  }
+  
+  .nav-container {
+    padding: 0 16px !important;
+  }
+  
+  .nav-dropdown {
+    right: 16px !important;
+    min-width: 200px !important;
+  }
+  
+  /* Prevent body scroll when menu open */
+  body.menu-open {
+    overflow: hidden !important;
+  }
+  
+  /* Remove custom scroll containers */
+  .page-scroll {
+    display: none !important;
+  }
+  
+  /* Ensure body handles scroll naturally */
+  body {
+    overflow-y: auto !important;
+    height: 100%;
+  }
+}
+
+/* =====================================================
+   ADDITIONAL MOBILE IMPROVEMENTS
+   ===================================================== */
+@media (max-width: 768px) {
+  /* Container padding */
+  .container {
+    padding: 0 16px !important;
+  }
+  
+  .container.narrow {
+    padding: 0 20px !important;
+  }
+  
+  /* Section spacing */
+  .section {
+    padding: 60px 0 !important;
+  }
+  
+  /* Typography mobile */
+  .section h2 {
+    font-size: 32px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .section-lead {
+    font-size: 16px !important;
+    margin-bottom: 40px !important;
+  }
+  
+  /* Hero mobile */
+  .hero {
+    padding: 100px 20px 60px !important;
+    min-height: auto !important;
+  }
+  
+  .hero h1 {
+    font-size: 36px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .hero p {
+    font-size: 16px !important;
+  }
+  
+  /* Portfolio mobile */
+  .portfolio-hero {
+    padding: 100px 20px 60px !important;
+    min-height: 40vh !important;
+  }
+  
+  .portfolio-hero h1 {
+    font-size: 36px !important;
+  }
+  
+  .portfolio-hero p {
+    font-size: 16px !important;
+  }
+  
+  /* About Section Mobile */
+  .about-lead-desc {
+    font-size: 16px !important;
+    margin-bottom: 40px !important;
+  }
+  
+  .company-profile-card {
+    padding: 24px !important;
+    margin-bottom: 40px !important;
+  }
+  
+  .company-profile-card p {
+    font-size: 14px !important;
+  }
+  
+  /* Why Choose Us Mobile */
+  .why-choose-us-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  
+  .why-content-container {
+    padding: 24px !important;
+  }
+  
+  .why-title {
+    font-size: 28px !important;
+    margin-bottom: 24px !important;
+  }
+  
+  .list-why li {
+    padding-left: 60px !important;
+    margin-bottom: 28px !important;
+  }
+  
+  .why-number {
+    font-size: 48px !important;
+    top: -6px !important;
+  }
+  
+  .list-why strong {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .list-why p {
+    font-size: 14px !important;
+  }
+  
+  /* Vision Mission Mobile */
+  .vm-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .vm-card {
+    padding: 32px !important;
+  }
+  
+  .vm-icon {
+    width: 64px !important;
+    height: 64px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .vm-card h3 {
+    font-size: 24px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .vm-card p,
+  .mission-list li {
+    font-size: 15px !important;
+  }
+  
+  /* Contact Section Mobile */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .contact-card {
+    padding: 28px !important;
+  }
+  
+  .contact-row {
+    grid-template-columns: 48px 1fr !important;
+    gap: 12px !important;
+  }
+  
+  .contact-ico {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  
+  .contact-link {
+    font-size: 18px !important;
+  }
+  
+  /* Footer Mobile */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+  
+  .footer-map-col {
+    min-height: 240px !important;
+  }
+  
+  .footer-map-overlay {
+    padding: 20px !important;
+  }
+  
+  .footer-title {
+    font-size: 28px !important;
+  }
+  
+  .footer-info-col {
+    padding: 25px 20px !important;
+  }
+  
+  .footer-social-col {
+    padding: 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .footer-social {
+    justify-content: center !important;
+  }
+  
+  /* WhatsApp Float Mobile */
+  .wa-float {
+    width: 56px !important;
+    height: 56px !important;
+    bottom: 20px !important;
+    right: 20px !important;
+  }
+  
+  .wa-float svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
+
+/* =====================================================
+   TOUCH IMPROVEMENTS
+   ===================================================== */
+@media (hover: none) and (pointer: coarse) {
+  /* Prevent tap highlight */
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  }
+  
+  /* Better touch feedback */
+  button, a {
+    touch-action: manipulation !important;
+  }
+  
+  /* Better touch targets */
+  .fleet-item {
+    min-height: 44px !important;
+  }
+  
+  .menu-toggle {
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+  
+  .nav-dropdown a,
+  .nav-dropdown button {
+    min-height: 44px !important;
+  }
+}
+
+/* =====================================================
+   PORTFOLIO GRID MOBILE
+   ===================================================== */
+@media (max-width: 768px) {
+  #portfolioGrid {
+    gap: 16px !important;
+    padding: 10px 6px 18px !important;
+  }
+  
+  .portfolio-item {
+    flex: 0 0 280px !important;
+  }
+  
+  .portfolio-image-wrap {
+    height: 200px !important;
+  }
+  
+  .portfolio-title {
+    font-size: 18px !important;
+  }
+  
+  .portfolio-tags {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-item {
+    flex: 0 0 260px !important;
+  }
+  
+  .portfolio-image-wrap {
+    height: 180px !important;
+  }
+}
+
+/* =====================================================
+   EXTRA SMALL DEVICES
+   ===================================================== */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 32px !important;
+  }
+  
+  .section h2 {
+    font-size: 28px !important;
+  }
+  
+  .footer-title {
+    font-size: 24px !important;
+  }
+  
+  .contact-link {
+    font-size: 16px !important;
+  }
+}
+

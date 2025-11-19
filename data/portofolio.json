@@ -1,0 +1,85 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "titleID": "Pengiriman Material Konstruksi - Jakarta Timur",
+      "titleEN": "Construction Material Delivery - East Jakarta",
+      "category": ["box", "intercity"],
+      "image": "asset/portfolio/project-1.jpg",
+      "descriptionID": "Pengiriman material konstruksi menggunakan armada CDD Box untuk proyek pembangunan di Jakarta Timur",
+      "descriptionEN": "Construction material delivery using CDD Box fleet for building project in East Jakarta"
+    },
+    {
+      "id": 2,
+      "titleID": "Distribusi Barang Konsumsi - Bekasi ke Bandung",
+      "titleEN": "Consumer Goods Distribution - Bekasi to Bandung",
+      "category": ["box", "intercity"],
+      "image": "asset/portfolio/project-2.jpg",
+      "descriptionID": "Distribusi barang konsumsi dengan jadwal tepat waktu menggunakan Fuso Box",
+      "descriptionEN": "Consumer goods distribution with on-time schedule using Fuso Box"
+    },
+    {
+      "id": 3,
+      "titleID": "Proyek Logistik Pabrik - Karawang",
+      "titleEN": "Factory Logistics Project - Karawang",
+      "category": ["special", "flatbed"],
+      "image": "asset/portfolio/project-3.jpg",
+      "descriptionID": "Penanganan logistik khusus untuk mesin dan peralatan pabrik",
+      "descriptionEN": "Special logistics handling for machinery and factory equipment"
+    },
+    {
+      "id": 4,
+      "titleID": "Pengiriman Peralatan Industri - Cikarang",
+      "titleEN": "Industrial Equipment Delivery - Cikarang",
+      "category": ["flatbed", "special"],
+      "image": "asset/portfolio/project-4.jpg",
+      "descriptionID": "Pengiriman peralatan industri berat menggunakan armada Tronton",
+      "descriptionEN": "Heavy industrial equipment delivery using Tronton fleet"
+    },
+    {
+      "id": 5,
+      "titleID": "Distribusi Multi-drop - Jabodetabek",
+      "titleEN": "Multi-drop Distribution - Jabodetabek",
+      "category": ["box", "intercity"],
+      "image": "asset/portfolio/project-5.jpg",
+      "descriptionID": "Layanan distribusi multi-drop untuk berbagai lokasi di area Jabodetabek",
+      "descriptionEN": "Multi-drop distribution service for various locations in Jabodetabek area"
+    },
+    {
+      "id": 6,
+      "titleID": "Pengiriman Container - Jakarta ke Surabaya",
+      "titleEN": "Container Shipment - Jakarta to Surabaya",
+      "category": ["interisland", "box"],
+      "image": "asset/portfolio/project-6.jpg",
+      "descriptionID": "Pengiriman container 40ft lintas pulau dengan armada Trailer",
+      "descriptionEN": "40ft container inter-island shipment with Trailer fleet"
+    },
+    {
+      "id": 7,
+      "titleID": "Proyek Relokasi Gudang - Tangerang",
+      "titleEN": "Warehouse Relocation Project - Tangerang",
+      "category": ["special", "flatbed"],
+      "image": "asset/portfolio/project-7.jpg",
+      "descriptionID": "Proyek khusus relokasi gudang dengan penanganan barang yang aman",
+      "descriptionEN": "Special warehouse relocation project with safe goods handling"
+    },
+    {
+      "id": 8,
+      "titleID": "Pengiriman Barang Elektronik - Bekasi ke Semarang",
+      "titleEN": "Electronics Delivery - Bekasi to Semarang",
+      "category": ["box", "intercity"],
+      "image": "asset/portfolio/project-8.jpg",
+      "descriptionID": "Pengiriman barang elektronik dengan penanganan khusus dan asuransi",
+      "descriptionEN": "Electronics delivery with special handling and insurance"
+    },
+    {
+      "id": 9,
+      "titleID": "Distribusi Material Bangunan - Area Banten",
+      "titleEN": "Building Materials Distribution - Banten Area",
+      "category": ["flatbed", "intercity"],
+      "image": "asset/portfolio/project-9.jpg",
+      "descriptionID": "Distribusi material bangunan menggunakan CDD Bak untuk berbagai proyek",
+      "descriptionEN": "Building materials distribution using CDD Flatbed for various projects"
+    }
+  ]
+}
